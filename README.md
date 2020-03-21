@@ -35,3 +35,17 @@ CDN，Content Distribute Network，可以直译成内容分发网络，CDN解决
 将获取的ip与对应的网址填入host文件中，然后刷新本地DNS.
 
 
+### 运行环境
+
+- python3+
+- 依赖库
+	- BeautifulSoup
+	- requsts
+	- shutil
+
+### 使用方式
+ 
+
+
+1. 用记事本或notepad++打开startFly.bat文件，将 var变量值改成你自己存放该项目的地址
+2. 右键点击startFly.bat, 以管理员身份运行
