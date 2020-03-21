@@ -1,5 +1,5 @@
 # speed-github
-一键解决github在国内网页加载和下载速度慢的问题
+一键解决github在国内加载和下载速度慢的问题
 
 
 ### 速度慢原因
@@ -49,3 +49,6 @@ CDN，Content Distribute Network，可以直译成内容分发网络，CDN解决
 
 1. 用记事本或notepad++打开startFly.bat文件，将 var变量值改成你自己存放该项目的地址
 2. 右键点击startFly.bat, 以管理员身份运行
+
+### 效果图
+![Ok啦](https://github.com/jvxiao/speed-github/blob/master/img/screenShot.PNG)
