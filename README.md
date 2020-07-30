@@ -40,7 +40,7 @@ CDN，Content Distribute Network，可以直译成内容分发网络，CDN解决
 - python3+
 - 依赖库
 	- BeautifulSoup
-	- requsts
+	- requests
 	- shutil
 
 ### 使用方式
