@@ -1,5 +1,5 @@
 # speed-github
-一键解决github在国内加载和下载速度慢的问题
+一键解决github在国内加载和下载速度慢的问题:laughing::laughing:
 
 
 ### 速度慢原因
