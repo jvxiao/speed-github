@@ -1,9 +1,12 @@
 
 <!-- </img> -->
 <div align="center"> <img src="./img/logo.jpg" width="400px"></div>
-<p>
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
+<p align="center" style="padding:10px 6px">
+  <img src="https://img.shields.io/badge/Windows-10-2376bc?style=plastic&logo=microsoft&logoColor=ffffff" />
+   <img src="https://img.shields.io/badge/Python-3.11-2376bc?style=plastic&logo=microsoft&logoColor=ffffff" />
+  <img src="https://img.shields.io/github/issues/jvxiao/speed-github.svg?color=F48D73" />
+  <img src="https://img.shields.io/github/license/jvxiao/speed-github.svg?logo=github"
 </p>
 
 # speed-github
@@ -42,13 +45,7 @@ python ./src/dnschecker/main.py
 
 After executing the above command, your hosts file will add the following content,and then automatically refresh the local DNS.
 
-Or you can choose to copy the following content into your hosts file, and manually refresh local DNS with 
-
-```
-
-ipconfig /flushdns
-
-```
+Or you can choose to copy the following content into your hosts file, and manually refresh local DNS with  `ipconfig /flushdns`
 
 ```
 # Gennerate by Speed-github
