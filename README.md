@@ -1,3 +1,14 @@
+
+<div align="center"> <img src="./img/logo.jpg" width="400px"></div>
+
+<p align="center" style="padding:10px 6px">
+  <img src="https://img.shields.io/badge/Windows-10-2376bc?style=plastic&logo=microsoft&logoColor=ffffff" />
+   <img src="https://img.shields.io/badge/Python-3.11-2376bc?style=plastic&logo=microsoft&logoColor=ffffff" />
+  <img src="https://img.shields.io/github/issues/jvxiao/speed-github.svg?color=F48D73" />
+  <img src="https://img.shields.io/github/license/jvxiao/speed-github.svg?logo=github"
+</p>
+
+
 # speed-github
 
 一个解决github在国内加载和下载速度慢问题的工具
