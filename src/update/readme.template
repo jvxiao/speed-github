@@ -48,6 +48,7 @@ After executing the above command, your hosts file will add the following conten
 Or you can choose to copy the following content into your hosts file, and manually refresh local DNS with  `ipconfig /flushdns`
 
 ```
+# Gennerate by Speed-github
 {{ hosts }}
 
 # Last modified {{ time }}
