@@ -6,7 +6,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from dnschecker.main import get_github_domains, get_all_ips
 
 template_path = 'src/update/readme.template'
-temp_file = os.path.dirname(__file__) + './temp'
+temp_file = 'src/update/temp'
 readme_path = os.path.join(os.path.dirname(__file__), '../../', 'README.md')
 print(readme_path)
 if __name__ == '__main__':
