@@ -1,6 +1,4 @@
 
-
-
 <!-- </img> -->
 <div align="center"> <img src="./img/logo.jpg" width="400px"></div>
 
@@ -39,7 +37,7 @@ cd speed-github
 pip install -r requirements.txt
 
 # run
-python ./src/main.py
+python ./src/dnschecker/main.py
 
 ```
 
@@ -50,37 +48,39 @@ After executing the above command, your hosts file will add the following conten
 Or you can choose to copy the following content into your hosts file, and manually refresh local DNS with  `ipconfig /flushdns`
 
 ```
-185.199.108.154                github.githubassets.com
-127.0.0.1                      central.github.com
-185.199.109.133                desktop.githubusercontent.com
-185.199.109.133                camo.githubusercontent.com
+# Gennerate by Speed-github
+
+185.199.109.154                github.githubassets.com
+140.82.113.21                  central.github.com
+185.199.111.133                desktop.githubusercontent.com
+185.199.108.133                camo.githubusercontent.com
 185.199.108.133                github.map.fastly.net
-31.13.95.38                    github.global.ssl.fastly.net
-127.0.0.1                      gist.github.com
-185.199.108.153                github.io
-127.0.0.1                      github.com
-127.0.0.1                      api.github.com
+199.193.116.105                github.global.ssl.fastly.net
+46.82.174.68                   gist.github.com
+185.199.109.153                github.io
+20.205.243.166                 github.com
+20.205.243.168                 api.github.com
 0.0.0.0                        raw.githubusercontent.com
-185.199.109.133                user-images.githubusercontent.com
-185.199.110.133                favicons.githubusercontent.com
-185.199.108.133                avatars5.githubusercontent.com
-185.199.111.133                avatars4.githubusercontent.com
+185.199.108.133                user-images.githubusercontent.com
+185.199.111.133                favicons.githubusercontent.com
+185.199.111.133                avatars5.githubusercontent.com
+185.199.108.133                avatars4.githubusercontent.com
 185.199.109.133                avatars3.githubusercontent.com
-185.199.111.133                avatars2.githubusercontent.com
+185.199.110.133                avatars2.githubusercontent.com
 185.199.109.133                avatars1.githubusercontent.com
-185.199.110.133                avatars0.githubusercontent.com
-185.199.110.133                avatars.githubusercontent.com
-127.0.0.1                      codeload.github.com
-54.231.229.17                  github-cloud.s3.amazonaws.com
-52.217.82.20                   github-com.s3.amazonaws.com
-52.217.96.68                   github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.177.62                   github-production-user-asset-6210df.s3.amazonaws.com
-52.217.200.137                 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.111.133                avatars0.githubusercontent.com
+185.199.108.133                avatars.githubusercontent.com
+20.205.243.165                 codeload.github.com
+3.5.7.17                       github-cloud.s3.amazonaws.com
+52.216.152.36                  github-com.s3.amazonaws.com
+3.5.29.146                     github-production-release-asset-2e65be.s3.amazonaws.com
+3.5.28.168                     github-production-user-asset-6210df.s3.amazonaws.com
+52.217.202.177                 github-production-repository-file-5c1aeb.s3.amazonaws.com
 185.199.109.153                githubstatus.com
 140.82.112.18                  github.community
-185.199.111.133                media.githubusercontent.com
+185.199.110.133                media.githubusercontent.com
 
 
-# Last modified 2025-04-19 10:50:53
+# Last modified 2025-04-17 18:12:27
 # Star repo at https://github.com/jvxiao/speed-github
 ```

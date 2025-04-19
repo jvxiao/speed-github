@@ -77,7 +77,7 @@ media.githubusercontent.com
  ```sh
 	pip install -r requirements.txt
 
-	python ./src/dnschecker/main.py
+	python ./src/main.py
  ```
 
 

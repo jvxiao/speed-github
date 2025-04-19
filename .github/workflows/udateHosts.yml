@@ -30,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: udate hosts
       run: |
-        if [ -f ./update/updatehosts.py ]; then python ./update/updatehosts.py;  fi
+        if [ -f ./src/update/updateReadme.py ]; then python ./src/update/updateReadme.py;  fi
         
     - name: commit
       id: commit
