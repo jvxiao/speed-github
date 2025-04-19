@@ -38,7 +38,11 @@ jobs:
         git config --global user.email jvxiao@outlook.com
         git config --global user.name jvxiao
         git add .
-        git commit -m "update readme"
+        if git diff-index --quiet HEAD --; then
+            echo "No changes to commit"
+          else
+            git commit -m "update hosts and readme"
+          fi
       continue-on-error: true
       
     - name: Check on failures
