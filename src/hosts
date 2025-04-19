@@ -1,0 +1,47 @@
+﻿# Added by Docker Desktop
+192.168.243.1 host.docker.internal
+192.168.243.1 gateway.docker.internal
+# To allow the same kube context to work on the host and the container:
+127.0.0.1 kubernetes.docker.internal
+# End of section
+
+127.0.0.1 jvxiao.test.com
+
+
+
+
+# Gennerate by Speed-github
+
+185.199.109.154                github.githubassets.com
+127.0.0.1                      central.github.com
+185.199.110.133                desktop.githubusercontent.com
+185.199.110.133                camo.githubusercontent.com
+185.199.111.133                github.map.fastly.net
+31.13.95.38                    github.global.ssl.fastly.net
+127.0.0.1                      gist.github.com
+185.199.110.153                github.io
+127.0.0.1                      github.com
+127.0.0.1                      api.github.com
+0.0.0.0                        raw.githubusercontent.com
+185.199.108.133                user-images.githubusercontent.com
+185.199.109.133                favicons.githubusercontent.com
+185.199.109.133                avatars5.githubusercontent.com
+185.199.108.133                avatars4.githubusercontent.com
+185.199.108.133                avatars3.githubusercontent.com
+185.199.110.133                avatars2.githubusercontent.com
+185.199.110.133                avatars1.githubusercontent.com
+185.199.109.133                avatars0.githubusercontent.com
+185.199.109.133                avatars.githubusercontent.com
+127.0.0.1                      codeload.github.com
+3.5.8.118                      github-cloud.s3.amazonaws.com
+3.5.22.217                     github-com.s3.amazonaws.com
+16.182.98.49                   github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.200.99                   github-production-user-asset-6210df.s3.amazonaws.com
+16.15.194.125                  github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.108.153                githubstatus.com
+140.82.112.18                  github.community
+185.199.110.133                media.githubusercontent.com
+
+
+# Last modified 2025-04-19 10:51:30
+# Star repo at https://github.com/jvxiao/speed-github
