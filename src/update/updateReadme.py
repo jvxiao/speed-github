@@ -1,7 +1,9 @@
 import os
-import time
 import shutil
 import sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
+
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from dnschecker.main import get_github_domains, get_all_ips
 
@@ -23,7 +25,11 @@ if __name__ == '__main__':
 
   content = '\n\n' + template
   content = content.replace('{{ hosts }}', host_str)
-  content = content.replace('{{ time }}', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()) )
+
+  # 获取指定时区的当前时间
+  tz = ZoneInfo("Asia/Shanghai")  # 时区名称（如 "America/New_York"）
+  now = datetime.now(tz)
+  content = content.replace('{{ time }}', now.strftime("%Y-%m-%d %H:%M:%S"))
 
   with open(temp_file, 'w+') as fp:
     fp.write(content)
