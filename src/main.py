@@ -48,9 +48,9 @@ def githubFly(writehost=False):
       os.system("ipconfig /flushdns")
       print('\n[success]: let github fly!')
     except:
-      print("[write hosts file faild]: permission deny! run as administrator.")
+      print("\n[write hosts file faild]: permission deny! run as administrator.")
   else:
-    print("[success]: copy the content in src/hosts and update local hosts file by hand")
+    print("\n[success]: copy the content in src/hosts and update local hosts file by hand")
 
 
 if __name__ == '__main__':
