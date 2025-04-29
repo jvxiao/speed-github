@@ -1,6 +1,8 @@
 import os
 import time
 import shutil
+import getopt
+import sys
 from dnschecker.main import get_all_ips, insert_or_append, get_github_domains 
 
 
@@ -15,8 +17,7 @@ local_host = cur_dir +'/hosts'
 host_path = 'C:\Windows\System32\drivers\etc\hosts'
 
 
-if __name__ == '__main__':
- 
+def githubFly(writehost=False):
   urls = get_github_domains()
   host_map = get_all_ips(urls)
  
@@ -41,5 +42,33 @@ if __name__ == '__main__':
     fh.writelines(new_lines)
   
   # overwrite the old hosts
-  shutil.copy(local_host, host_path)
-  os.system("ipconfig /flushdns")
+  if writehost:
+    try:
+      shutil.copy(local_host, host_path)
+      os.system("ipconfig /flushdns")
+      print('\n[success]: let github fly!')
+    except:
+      print("\n[write hosts file faild]: permission deny! run as administrator.")
+  else:
+    print("\n[success]: copy the content in src/hosts and update local hosts file by hand")
+
+
+if __name__ == '__main__':
+  
+  try:
+    opts, args = getopt.getopt(sys.argv[1:],"hw", ["writehosts"])
+    if len(opts) == 0:
+      githubFly(False)
+  except:
+    print("help: python ./src/main.py -h")
+    sys.exit(2)
+  
+  for opt, arg in opts:
+    if opt == '-h':
+      print("   [1] automaticly update local hosts file: python src/main.py -w ")
+      print("   [2] update local hosts file by hand: python src/main.py")
+    if opt in ('-w', '--writehosts'):
+      githubFly(True)
+    else:
+      githubFly(False)
+       
