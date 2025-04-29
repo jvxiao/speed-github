@@ -56,7 +56,7 @@ def githubFly(writehost=False):
 if __name__ == '__main__':
   
   try:
-    opts, args = getopt.getopt(sys.argv[1:],"hw", ["writehost"])
+    opts, args = getopt.getopt(sys.argv[1:],"hw", ["writehosts"])
     if len(opts) == 0:
       githubFly(False)
   except:
@@ -67,7 +67,7 @@ if __name__ == '__main__':
     if opt == '-h':
       print("   [1] automaticly update local hosts file: python src/main.py -w ")
       print("   [2] update local hosts file by hand: python src/main.py")
-    if opt in ('-w', '--writehost'):
+    if opt in ('-w', '--writehosts'):
       githubFly(True)
     else:
       githubFly(False)
