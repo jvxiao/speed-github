@@ -8,6 +8,7 @@
   <img src="https://img.shields.io/github/license/jvxiao/speed-github.svg?logo=github"
 </p>
 
+[中文](./README-Cn.md) &emsp; [English](./README.md)
 
 # speed-github
 
