@@ -26,7 +26,7 @@ For some reasons, Github is restricted in China. The main method is`DNS pollutio
 Resolve the GitHub-related domain name into the correct IP address, and then fill it into the local host file. When users visit GitHub, they will no longer resolve the IP address to the DNS server, but use the correct local IP address, which will not be affected by DNS pollution.
 
 ## Usage
->Tip: run with admin permission, beacase the `/etc/hosts` file need to be modified.
+>Tip: run with admin permission, because the `/etc/hosts` file need to be modified.
 
 ``` bash
 # Download this repo to local
