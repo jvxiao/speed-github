@@ -38,9 +38,20 @@ pip install -r requirements.txt
 
 # run
 python ./src/main.py
-
 ```
 
+After doing this, copy the content `src/hosts` to update you hosts in `etc`, or you can just relace it. And then run the following command to update local DNS.
+```
+ipconfig /flushdns
+```
+
+**A more quick way**， run the folloing command, which will automaticlly do the all thing for you.
+
+```
+python src/main.py -w
+# or 
+python src/main.py --writehosts
+```
 ## github-hosts
 
 After executing the above command, your hosts file will add the following content,and then automatically refresh the local DNS.
