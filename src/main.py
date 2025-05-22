@@ -3,6 +3,7 @@ import time
 import shutil
 import getopt
 import sys
+import platform  
 from dnschecker.main import get_all_ips, insert_or_append, get_github_domains 
 
 
@@ -13,9 +14,12 @@ cur_dir = os.path.dirname(__file__)
 template_path = cur_dir + '/host-template'
 # temp hosts file
 local_host = cur_dir +'/hosts' 
-# host file on windows
-host_path = 'C:\Windows\System32\drivers\etc\hosts'
-
+if sys.platform == 'win32':
+    # Windows 
+    host_path = r'C:\Windows\System32\drivers\etc\hosts'
+else:
+    # macOS or Linux 
+    host_path = '/etc/hosts'
 
 def githubFly(writehost=False):
   urls = get_github_domains()
@@ -43,14 +47,25 @@ def githubFly(writehost=False):
   
   # overwrite the old hosts
   if writehost:
-    try:
-      shutil.copy(local_host, host_path)
-      os.system("ipconfig /flushdns")
-      print('\n[success]: let github fly!')
-    except:
-      print("\n[write hosts file faild]: permission deny! run as administrator.")
-  else:
-    print("\n[success]: copy the content in src/hosts and update local hosts file by hand")
+      try:
+          shutil.copy(local_host, host_path)
+
+          # 根据系统类型刷新 DNS 缓存
+          sys_type = platform.system()
+          if sys_type == 'Windows':
+              os.system("ipconfig /flushdns")
+          elif sys_type == 'Darwin':  # macOS
+              os.system("sudo dscacheutil -flushcache")
+              os.system("sudo killall -HUP mDNSResponder")
+          elif sys_type == 'Linux':
+              os.system("sudo systemd-resolve --flush-caches")
+          else:
+              print("[warning] unknown system, DNS not flushed automatically")
+
+          print('\n[success]: let github fly!')
+      except:
+          print("\n[write hosts file faild]: permission deny! run as administrator.")
+
 
 
 if __name__ == '__main__':
