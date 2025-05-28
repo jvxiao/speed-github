@@ -98,3 +98,8 @@ Or you can choose to copy the following content into your hosts file, and manual
 # Last modified 2025-05-28 22:21:10
 # Star repo at https://github.com/jvxiao/speed-github
 ```
+## Sponsor me
+
+If you like this project, or if it helps you, please consider buying the author a cup of coffee :coffee:
+
+<img src="https://image.baidu.com/search/down?url=http://tvax2.sinaimg.cn/mw690/0071fJItgy1i1vlvailptj30ih0h80wf.jpg" style="width:300px">
