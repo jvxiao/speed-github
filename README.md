@@ -65,37 +65,37 @@ Or you can choose to copy the following content into your hosts file, and manual
 ```
 # Gennerate by Speed-github
 185.199.108.215                github.githubassets.com
-140.82.113.22                  central.github.com
-185.199.111.133                desktop.githubusercontent.com
-185.199.109.133                camo.githubusercontent.com
+140.82.114.21                  central.github.com
+185.199.109.133                desktop.githubusercontent.com
+185.199.108.133                camo.githubusercontent.com
 185.199.108.133                github.map.fastly.net
-146.75.105.194                 github.global.ssl.fastly.net
-140.82.114.3                   gist.github.com
-185.199.111.153                github.io
-140.82.114.3                   github.com
-140.82.113.5                   api.github.com
+151.101.21.194                 github.global.ssl.fastly.net
+48.202.91.176                  gist.github.com
+185.199.109.153                github.io
+48.202.91.176                  github.com
+20.29.134.17                   api.github.com
 185.199.108.133                raw.githubusercontent.com
-185.199.111.133                user-images.githubusercontent.com
+185.199.110.133                user-images.githubusercontent.com
 185.199.108.133                favicons.githubusercontent.com
 185.199.108.133                avatars5.githubusercontent.com
-185.199.110.133                avatars4.githubusercontent.com
+185.199.108.133                avatars4.githubusercontent.com
 185.199.108.133                avatars3.githubusercontent.com
 185.199.108.133                avatars2.githubusercontent.com
-185.199.110.133                avatars1.githubusercontent.com
+185.199.108.133                avatars1.githubusercontent.com
 185.199.108.133                avatars0.githubusercontent.com
-185.199.111.133                avatars.githubusercontent.com
-140.82.112.10                  codeload.github.com
-16.15.237.190                  github-cloud.s3.amazonaws.com
-52.217.200.90                  github-com.s3.amazonaws.com
-16.15.245.25                   github-production-release-asset-2e65be.s3.amazonaws.com
-52.216.234.38                  github-production-user-asset-6210df.s3.amazonaws.com
-52.217.224.186                 github-production-repository-file-5c1aeb.s3.amazonaws.com
-185.199.109.153                githubstatus.com
-140.82.114.17                  github.community
-185.199.108.133                media.githubusercontent.com
+185.199.110.133                avatars.githubusercontent.com
+20.29.134.24                   codeload.github.com
+52.216.40.186                  github-cloud.s3.amazonaws.com
+54.231.204.162                 github-com.s3.amazonaws.com
+54.231.203.2                   github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.237.195                  github-production-user-asset-6210df.s3.amazonaws.com
+54.231.234.66                  github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.108.153                githubstatus.com
+140.82.112.18                  github.community
+185.199.109.133                media.githubusercontent.com
 
 
-# Last modified 2026-11-24 22:36:37
+# Last modified 2026-11-25 08:24:20
 # Star repo at https://github.com/jvxiao/speed-github
 ```
 
